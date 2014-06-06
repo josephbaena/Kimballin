@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+
 @end
 
 @implementation EventVC
@@ -26,7 +27,7 @@
 {
     [super viewWillAppear:animated];
      NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"mm-dd-yy"];
+    [formatter setDateFormat:@"MM/dd/yyyy hh:mm:ss a"];
     
     [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"US/Pacific"]];
     

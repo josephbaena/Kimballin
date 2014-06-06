@@ -46,8 +46,8 @@
 
 - (IBAction)emailButtonPressed:(UIButton *)sender {
     //compose email
-    NSString *subject = @"Hey!";
-    NSString *body = @"Hello:";
+    NSString *subject = @"";
+    NSString *body = @"";
     NSArray *recipients = [NSArray arrayWithObject:self.staffMember.email];
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;

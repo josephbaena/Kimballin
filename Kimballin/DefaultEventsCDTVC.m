@@ -40,7 +40,7 @@
     if ([sender isKindOfClass:[UITableViewCell class]]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         if (indexPath) {
-            if ([segue.identifier isEqualToString:@"Display Staff Member"]) {
+            if ([segue.identifier isEqualToString:@"Display Event"]) {
                 if ([segue.destinationViewController isKindOfClass:[EventVC class]]) {
                     EventVC *vc = (EventVC *)segue.destinationViewController;
                     Event *event = [self.fetchedResultsController objectAtIndexPath:indexPath];

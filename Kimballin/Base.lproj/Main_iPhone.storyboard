@@ -57,7 +57,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Afe-1m-qwW" kind="push" id="fYS-yC-hhP"/>
+                                    <segue destination="Afe-1m-qwW" kind="push" identifier="Display Event" id="fYS-yC-hhP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -127,9 +127,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2rt-Uh-vto"/>
                     <connections>
-                        <outlet property="endTimeLabel" destination="ll0-fn-6g2" id="PoP-IE-4aU"/>
-                        <outlet property="locationLabel" destination="t4s-hs-GMF" id="vRI-SI-645"/>
-                        <outlet property="startTimeLabel" destination="7NP-eB-n3X" id="T2x-e3-yzD"/>
+                        <outlet property="endTimeLabel" destination="ll0-fn-6g2" id="84J-pu-Hf3"/>
+                        <outlet property="locationLabel" destination="t4s-hs-GMF" id="LAf-zv-rXb"/>
+                        <outlet property="startTimeLabel" destination="7NP-eB-n3X" id="AnE-6q-fOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giN-8r-1ec" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,6 +1,7 @@
 #import "KimballinDatabase.h"
 #import "StaffMember.h"
 #import "Event.h"
+#import "TriviaElement.h"
 
 @interface KimballinDatabase()
 @property (nonatomic, readwrite, strong) NSManagedObjectContext *managedObjectContext;
@@ -110,7 +111,22 @@
                 NSLog(@"Exception: %@", ex);
             }
         }
-        
+     
+        NSString *triviaElementsPath = [[NSBundle mainBundle] pathForResource:@"TriviaElements" ofType:@"plist"];
+        NSArray *triviaElementsArray = [NSArray arrayWithContentsOfFile:triviaElementsPath];
+        for (NSDictionary *dict in triviaElementsArray) {
+            @try {
+                TriviaElement *te = [NSEntityDescription insertNewObjectForEntityForName:@"TriviaElement" inManagedObjectContext:self.managedObjectContext];
+                te.question = [dict objectForKey:@"question"];
+                te.answer = [dict objectForKey:@"answer"];
+                
+                NSError *err = nil;
+                [self.managedObjectContext save:&err];
+            } @catch (NSException *ex) {
+                NSLog(@"Exception: %@", ex);
+            }
+        }
+
     }
 }
 

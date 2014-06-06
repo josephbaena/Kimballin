@@ -49,6 +49,9 @@
 		99A8D00819357188006E60BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE719357188006E60BE /* UIKit.framework */; };
 		99A8D01019357188006E60BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A8D00E19357188006E60BE /* InfoPlist.strings */; };
 		99A8D01219357188006E60BE /* KimballinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A8D01119357188006E60BE /* KimballinTests.m */; };
+		99C61629194225330057FC33 /* TriviaElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C61628194225330057FC33 /* TriviaElements.plist */; };
+		99C6162C194226D20057FC33 /* TriviaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6162B194226D20057FC33 /* TriviaElement.m */; };
+		99C6162F194229730057FC33 /* TriviaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6162E194229730057FC33 /* TriviaVC.m */; };
 		99E383AF1940E33C0009524A /* StaffMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383AE1940E33C0009524A /* StaffMember.m */; };
 		99E383D819414E220009524A /* KimballinDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383D719414E220009524A /* KimballinDatabase.m */; };
 		99E383DB194150710009524A /* DefaultStaffDirectoryCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383DA194150710009524A /* DefaultStaffDirectoryCDTVC.m */; };
@@ -119,6 +122,11 @@
 		99A8D00D19357188006E60BE /* KimballinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KimballinTests-Info.plist"; sourceTree = "<group>"; };
 		99A8D00F19357188006E60BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99A8D01119357188006E60BE /* KimballinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimballinTests.m; sourceTree = "<group>"; };
+		99C61628194225330057FC33 /* TriviaElements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TriviaElements.plist; sourceTree = "<group>"; };
+		99C6162A194226D20057FC33 /* TriviaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaElement.h; sourceTree = "<group>"; };
+		99C6162B194226D20057FC33 /* TriviaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaElement.m; sourceTree = "<group>"; };
+		99C6162D194229730057FC33 /* TriviaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaVC.h; sourceTree = "<group>"; };
+		99C6162E194229730057FC33 /* TriviaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaVC.m; sourceTree = "<group>"; };
 		99E383AD1940E33C0009524A /* StaffMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMember.h; sourceTree = "<group>"; };
 		99E383AE1940E33C0009524A /* StaffMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMember.m; sourceTree = "<group>"; };
 		99E383D619414E220009524A /* KimballinDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KimballinDatabase.h; sourceTree = "<group>"; };
@@ -170,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				99183E8F193DB3EB00BFCC4A /* Model.xcdatamodeld */,
+				99C6162A194226D20057FC33 /* TriviaElement.h */,
+				99C6162B194226D20057FC33 /* TriviaElement.m */,
 				991DEF431941C8AC006AA938 /* Event.h */,
 				991DEF441941C8AC006AA938 /* Event.m */,
 				99E383AD1940E33C0009524A /* StaffMember.h */,
@@ -230,10 +240,13 @@
 				99E383E3194154740009524A /* StaffMemberVC.m */,
 				991DEF461941CF0C006AA938 /* PhotoAlbumCDTVC.h */,
 				991DEF471941CF0C006AA938 /* PhotoAlbumCDTVC.m */,
+				99C6162D194229730057FC33 /* TriviaVC.h */,
+				99C6162E194229730057FC33 /* TriviaVC.m */,
 				99A8CFF219357188006E60BE /* KimballinAppDelegate.h */,
 				99A8CFF319357188006E60BE /* KimballinAppDelegate.m */,
 				991A316E193EC81500FFA335 /* StaffMembers.plist */,
 				991DEF3019419AB0006AA938 /* Events.plist */,
+				99C61628194225330057FC33 /* TriviaElements.plist */,
 				99A8CFF519357188006E60BE /* Main_iPhone.storyboard */,
 				99A8CFF819357188006E60BE /* Main_iPad.storyboard */,
 				99183E92193DB3F300BFCC4A /* Core Data */,
@@ -274,7 +287,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		99E383B01940E40A0009524A /* Images */ = {
+		99C6162619420C3A0057FC33 /* Staff */ = {
 			isa = PBXGroup;
 			children = (
 				991DEF2C19415C6B006AA938 /* James.jpg */,
@@ -292,6 +305,22 @@
 				991DEF1219415B64006AA938 /* Karina.jpg */,
 				991DEF0E19415B2D006AA938 /* Joseph.jpg */,
 				991DEF0F19415B2D006AA938 /* Jorge.jpg */,
+			);
+			name = Staff;
+			sourceTree = "<group>";
+		};
+		99C6162719420C8F0057FC33 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
+		99E383B01940E40A0009524A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				99C6162719420C8F0057FC33 /* Album */,
+				99C6162619420C3A0057FC33 /* Staff */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -381,6 +410,7 @@
 				99A8CFFF19357188006E60BE /* Images.xcassets in Resources */,
 				991DEF1C19415BB6006AA938 /* DavidN.jpg in Resources */,
 				991DEF1E19415BB6006AA938 /* Carey.jpg in Resources */,
+				99C61629194225330057FC33 /* TriviaElements.plist in Resources */,
 				991DEF2119415BB6006AA938 /* Catherine.jpg in Resources */,
 				991DEF2019415BB6006AA938 /* Qudus.jpg in Resources */,
 				991DEF2B19415BEF006AA938 /* Andres.jpg in Resources */,
@@ -421,9 +451,11 @@
 				99E383E4194154740009524A /* StaffMemberVC.m in Sources */,
 				99183E91193DB3EB00BFCC4A /* Model.xcdatamodeld in Sources */,
 				991DEF3A19419DE0006AA938 /* EventsCDTVC.m in Sources */,
+				99C6162C194226D20057FC33 /* TriviaElement.m in Sources */,
 				991DEF401941A36E006AA938 /* EventVC.m in Sources */,
 				991DEF3D19419E12006AA938 /* DefaultEventsCDTVC.m in Sources */,
 				991DEF481941CF0C006AA938 /* PhotoAlbumCDTVC.m in Sources */,
+				99C6162F194229730057FC33 /* TriviaVC.m in Sources */,
 				99A8CFF019357188006E60BE /* main.m in Sources */,
 				99183EA4193E35FB00BFCC4A /* CoreDataTableViewController.m in Sources */,
 			);

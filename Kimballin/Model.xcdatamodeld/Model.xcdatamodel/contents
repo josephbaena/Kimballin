@@ -17,8 +17,13 @@
         <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="TriviaElement" representedClassName="TriviaElement" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Event" positionX="-54" positionY="27" width="128" height="135"/>
         <element name="StaffMember" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="TriviaElement" positionX="-54" positionY="54" width="128" height="73"/>
     </elements>
 </model>

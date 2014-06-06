@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>When was Kimball built?</string>
+		<key>answer</key>
+		<string>1991</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is Kimball&apos;s theme?</string>
+		<key>answer</key>
+		<string>Arts</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>When did Kimball get its theme?</string>
+		<key>answer</key>
+		<string>2010</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>How many residents live in Kimball as of 2014?</string>
+		<key>answer</key>
+		<string>216</string>
+	</dict>
+</array>
+</plist>

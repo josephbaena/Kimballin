@@ -34,15 +34,29 @@
     }
 }
 
+- (UIImage*) imageScaledToSize:(UIImage *)img :(CGSize)size {
+    UIGraphicsBeginImageContext(size);
+    [img drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Staff Member"];
     
     StaffMember *staffMember = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    //fill out cell
     cell.textLabel.text = staffMember.name;
     cell.detailTextLabel.text = staffMember.position;
-    [cell.imageView setImage:[UIImage imageNamed:staffMember.imageName]];
     
+    //set up thumbnail for cell
+    UIImage *img = [UIImage imageNamed:staffMember.imageName];
+    UIImage *thumbnail = [self imageScaledToSize:img :CGSizeMake(50, 50)];
+    [cell.imageView setImage:thumbnail];
+
     return cell;
 }
 

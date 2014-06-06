@@ -33,10 +33,28 @@
     self.phoneLabel.text = self.staffMember.phone;
     self.emailLabel.text = self.staffMember.email;
     self.roomLabel.text = self.staffMember.room;
-    
-    //TODO: scale the image size
+
+    //scale the staff photo so that it maintains original aspect ratio
     UIImage *img = [UIImage imageNamed:self.staffMember.imageName];
-    [self.imageView setImage:img];
+    UIImage *staffPhoto = [self resizeImageMaintainAspectRatio:img scaledToWidth:self.imageView.bounds.size.width];
+    [self.imageView setImage:staffPhoto];
+}
+
+- (UIImage*)resizeImageMaintainAspectRatio:(UIImage*)img scaledToWidth:(float)viewWidth
+{
+    float oldWidth = img.size.width;
+    float oldHeight = img.size.height;
+    float scaleFactor = viewWidth / oldWidth;
+    
+    float newWidth = oldWidth * scaleFactor;
+    float newHeight = oldHeight * scaleFactor;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [img drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 - (IBAction)phoneButtonPressed:(UIButton *)sender {

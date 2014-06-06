@@ -132,8 +132,8 @@
                                 <rect key="frame" x="20" y="169" width="280" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOD-pG-aj3">
-                                <rect key="frame" x="176" y="396" width="124" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOD-pG-aj3">
+                                <rect key="frame" x="167" y="396" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="09g-7a-mxW"/>
@@ -141,6 +141,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Add to Calendar">
+                                    <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -294,6 +295,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Call">
+                                    <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -305,6 +307,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Email">
+                                    <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -378,14 +381,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-xU-Yfr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-xU-Yfr">
                                 <rect key="frame" x="46" y="389" width="229" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="Xxp-Tf-Tls"/>
+                                    <constraint firstAttribute="height" constant="81" id="4WG-f4-7nY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Show Answer">
+                                    <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -395,12 +399,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pWz-xU-Yfr" firstAttribute="top" secondItem="zGh-AQ-KBm" secondAttribute="bottom" constant="3" id="Ale-lW-Z23"/>
+                            <constraint firstItem="RyM-Fe-GhY" firstAttribute="top" secondItem="pWz-xU-Yfr" secondAttribute="bottom" constant="49" id="1dS-Ne-G6A"/>
+                            <constraint firstItem="pWz-xU-Yfr" firstAttribute="top" secondItem="zGh-AQ-KBm" secondAttribute="bottom" constant="3" id="Bl7-zq-HxS"/>
                             <constraint firstItem="zGh-AQ-KBm" firstAttribute="leading" secondItem="WRR-41-HUq" secondAttribute="leading" constant="20" symbolic="YES" id="Ebx-vL-lG9"/>
                             <constraint firstAttribute="trailing" secondItem="zGh-AQ-KBm" secondAttribute="trailing" constant="20" symbolic="YES" id="aBH-Gi-nk7"/>
-                            <constraint firstItem="RyM-Fe-GhY" firstAttribute="top" secondItem="pWz-xU-Yfr" secondAttribute="bottom" constant="49" id="pUn-lv-TOI"/>
-                            <constraint firstItem="pWz-xU-Yfr" firstAttribute="centerX" secondItem="zGh-AQ-KBm" secondAttribute="centerX" id="tUz-Fv-Y5h"/>
-                            <constraint firstItem="pWz-xU-Yfr" firstAttribute="leading" secondItem="WRR-41-HUq" secondAttribute="leading" constant="46" id="wM5-wt-Jkc"/>
+                            <constraint firstItem="pWz-xU-Yfr" firstAttribute="leading" secondItem="WRR-41-HUq" secondAttribute="leading" constant="46" id="w4n-5G-bPZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pWz-xU-Yfr" secondAttribute="trailing" constant="45" id="zdy-pj-IJh"/>
                             <constraint firstItem="zGh-AQ-KBm" firstAttribute="top" secondItem="ikL-DK-wz1" secondAttribute="bottom" constant="12" id="zfk-sA-Jvc"/>
                         </constraints>
                     </view>
@@ -452,6 +456,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wph-z5-Q7V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -471,6 +476,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ph6-Mb-Imw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -490,6 +496,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZWj-nD-e0h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.92156869173049927" green="0.61960786581039429" blue="0.23529413342475891" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -506,6 +513,7 @@
         <image name="Trivia" width="32" height="32"/>
         <image name="UpcomingEvents" width="32" height="32"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

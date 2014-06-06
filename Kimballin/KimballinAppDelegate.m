@@ -15,7 +15,7 @@
 {
     //preload Core Data with demo data
     [[KimballinDatabase sharedDefaultKimballinDatabase] fetch];
-
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -1,5 +1,6 @@
 #import "KimballinDatabase.h"
 #import "StaffMember.h"
+#import "Event.h"
 
 @interface KimballinDatabase()
 @property (nonatomic, readwrite, strong) NSManagedObjectContext *managedObjectContext;
@@ -64,17 +65,16 @@
 - (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
     _managedObjectContext = managedObjectContext;
-    [[NSNotificationCenter defaultCenter] postNotificationName:KimballinDatabaseAvailable
-                                                        object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:KimballinDatabaseAvailable object:self];
 }
 
 - (void)fetch
 {
     if (self.managedObjectContext) {
 
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"StaffMembers" ofType:@"plist"];
-        NSArray *array = [NSArray arrayWithContentsOfFile:path];
-        for (NSDictionary *dict in array) {
+        NSString *staffMemberPath = [[NSBundle mainBundle] pathForResource:@"StaffMembers" ofType:@"plist"];
+        NSArray *staffMemberArray = [NSArray arrayWithContentsOfFile:staffMemberPath];
+        for (NSDictionary *dict in staffMemberArray) {
             @try {
                 StaffMember *staffMember = [NSEntityDescription insertNewObjectForEntityForName:@"StaffMember" inManagedObjectContext:self.managedObjectContext];
                 staffMember.name = [dict objectForKey:@"name"];
@@ -86,11 +86,31 @@
                 
                 NSError *err = nil;
                 [self.managedObjectContext save:&err];
-            } @catch (NSException * e) {
-                NSLog(@"Exception: %@", e);
+            } @catch (NSException * ex) {
+                NSLog(@"Exception: %@", ex);
             }
     
         }
+        
+        NSString *eventsPath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+        NSArray *eventsArray = [NSArray arrayWithContentsOfFile:eventsPath];
+        for (NSDictionary *dict in eventsArray) {
+            @try {
+                Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+                event.name = [dict objectForKey:@"name"];
+                event.location = [dict objectForKey:@"location"];
+                event.startTime = [dict objectForKey:@"startTime"];
+                event.endTime = [dict objectForKey:@"endTime"];
+                
+                
+                
+                NSError *err = nil;
+                [self.managedObjectContext save:&err];
+            } @catch (NSException *ex) {
+                NSLog(@"Exception: %@", ex);
+            }
+        }
+        
     }
 }
 

@@ -40,9 +40,7 @@
 }
 
 - (IBAction)phoneButtonPressed:(UIButton *)sender {
-    NSLog(@"phoneButtonPressed!");
     NSString *phoneNumber = [@"telprompt://" stringByAppendingString:self.staffMember.phone];
-    NSLog(@"phoneNumber = %@", phoneNumber);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
 }
 

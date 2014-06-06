@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Arts Jam 8</string>
+		<key>location</key>
+		<string>Main Lounge</string>
+		<key>startTime</key>
+		<date>2014-06-10T02:30:00Z</date>
+		<key>endTime</key>
+		<date>2014-06-10T05:00:00Z</date>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Café Night</string>
+		<key>location</key>
+		<string>Lobby</string>
+		<key>startTime</key>
+		<date>2014-06-15T03:00:00Z</date>
+		<key>endTime</key>
+		<date>2014-06-15T05:00:00Z</date>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hike the Dish</string>
+		<key>location</key>
+		<string>Dish</string>
+		<key>startTime</key>
+		<date>2014-06-16T16:00:00Z</date>
+		<key>endTime</key>
+		<date>2014-06-16T18:00:00Z</date>
+	</dict>
+</array>
+</plist>

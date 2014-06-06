@@ -204,7 +204,7 @@
         <scene sceneID="fdr-ph-MJZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nkw-ic-5FB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Staff Directory" id="6s2-dn-Pmf"/>
+                    <tabBarItem key="tabBarItem" title="Staff Directory" image="StaffDirectory" id="6s2-dn-Pmf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wph-z5-Q7V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -223,7 +223,7 @@
         <scene sceneID="hP3-Um-gJK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Td6-vO-7jY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Upcoming Events" id="D8b-35-StZ"/>
+                    <tabBarItem key="tabBarItem" title="Upcoming Events" image="UpcomingEvents" id="D8b-35-StZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ph6-Mb-Imw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -242,7 +242,7 @@
         <scene sceneID="IfO-ip-VUK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sfg-J3-2cN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Photo Album" id="FuE-ge-dLq"/>
+                    <tabBarItem key="tabBarItem" title="Photo Album" image="PhotoAlbum" id="FuE-ge-dLq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N0N-iu-VKM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -258,6 +258,11 @@
             <point key="canvasLocation" x="212" y="442"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PhotoAlbum" width="37" height="37"/>
+        <image name="StaffDirectory" width="37" height="37"/>
+        <image name="UpcomingEvents" width="37" height="37"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

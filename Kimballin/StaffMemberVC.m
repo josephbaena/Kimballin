@@ -24,29 +24,6 @@
     self.title = staffMember.name;
 }
 
-- (UIImage *)thumbnailOfSize:(CGSize)size {
-    if( self.previewThumbnail )
-    	return self.previewThumbnail; // returned cached thumbnail
-    
-    UIGraphicsBeginImageContext(size);
-    
-    // draw scaled image into thumbnail context
-    [self.preview drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    
-    UIImage *newThumbnail = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // pop the context
-    UIGraphicsEndImageContext();
-    
-    if(newThumbnail == nil)
-        NSLog(@"could not scale image");
-    
-    self.previewThumbnail = newThumbnail;
-    
-    return self.previewThumbnail;
-}
-
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

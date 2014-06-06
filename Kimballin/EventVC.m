@@ -77,9 +77,22 @@ static const int RADIUS = 100;
         
         NSError *err = nil;
         BOOL success = [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
+        NSLog(@"In calendarButtonPressed");
+        UIAlertView *alert;
         if (!success) {
+            NSLog(@"No success");
             NSLog(@"Could not save calendar event: %@", [error localizedDescription]);
+            alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to save event to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        } else {
+            NSLog(@"Success");
+            alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Added entry to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+
         }
+        
+        [alert performSelectorOnMainThread:@selector(show)
+                                withObject:nil
+                             waitUntilDone:NO];
+        [alert show];
     }];
 }
 

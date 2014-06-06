@@ -44,9 +44,9 @@
 {
     float oldWidth = img.size.width;
     float oldHeight = img.size.height;
-    float scaleFactor = viewWidth / oldWidth;
+    float newWidth = viewWidth;
+    float scaleFactor = newWidth / oldWidth;
     
-    float newWidth = oldWidth * scaleFactor;
     float newHeight = oldHeight * scaleFactor;
     
     UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
@@ -58,8 +58,12 @@
 }
 
 - (IBAction)phoneButtonPressed:(UIButton *)sender {
-    NSString *phoneNumber = [@"telprompt://" stringByAppendingString:self.staffMember.phone];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+    NSString *phoneNoDashes = [self.staffMember.phone stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    NSString *phoneNumber = [NSString stringWithFormat:@"teleprompt:%@", phoneNoDashes];
+    NSURL *phoneURL = [NSURL URLWithString:phoneNumber];
+    if ([[UIApplication sharedApplication] canOpenURL:phoneURL]) {
+        [[UIApplication sharedApplication] openURL:phoneURL];
+    }
 }
 
 - (IBAction)emailButtonPressed:(UIButton *)sender {

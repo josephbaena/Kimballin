@@ -293,24 +293,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmL-ho-mXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="1164"/>
+            <point key="canvasLocation" x="1194" y="1164"/>
         </scene>
-        <!--TriviaCDTVC - Kimball Trivia-->
+        <!--Default TriviaCDTVC - Kimball Trivia-->
         <scene sceneID="3rM-P4-XVG">
             <objects>
-                <tableViewController id="iBd-JK-93a" customClass="TriviaCDTVC" sceneMemberID="viewController">
+                <tableViewController id="iBd-JK-93a" customClass="DefaultTriviaCDTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jgm-qA-OZ7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Trivia Element" id="pwV-Dw-MDK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Trivia Element" id="pwV-Dw-MDK">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pwV-Dw-MDK" id="3Cl-zx-6gY">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="72K-pM-tjh" kind="push" identifier="Display Question" id="G0j-P6-qGK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -323,6 +326,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUl-Eo-Mim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="472"/>
+        </scene>
+        <!--QuestionVC-->
+        <scene sceneID="4ZI-ni-mNZ">
+            <objects>
+                <viewController id="72K-pM-tjh" customClass="QuestionVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ikL-DK-wz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="RyM-Fe-GhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WRR-41-HUq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-AQ-KBm">
+                                <rect key="frame" x="20" y="76" width="280" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-xU-Yfr">
+                                <rect key="frame" x="46" y="389" width="229" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KuG-fU-CNC" kind="push" identifier="Display Answer" id="fxE-wX-uoC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uya-Kv-pNq"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="zGh-AQ-KBm" id="y8G-Wn-db0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVQ-bO-RVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="464"/>
+        </scene>
+        <!--AnswerVC-->
+        <scene sceneID="ch4-vK-ndq">
+            <objects>
+                <viewController id="KuG-fU-CNC" customClass="AnswerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVy-Cy-T6p"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pw6-XZ-cuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Q1-hv-UfL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Z6X-pi-kqW">
+                                <rect key="frame" x="20" y="78" width="280" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rVZ-7w-AlF"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="Z6X-pi-kqW" id="5cL-w4-7Eb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiB-JT-e42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="464"/>
         </scene>
         <!--Navigation Controller - Staff Directory-->
         <scene sceneID="fdr-ph-MJZ">

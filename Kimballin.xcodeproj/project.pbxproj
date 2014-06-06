@@ -51,6 +51,9 @@
 		99C61629194225330057FC33 /* TriviaElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C61628194225330057FC33 /* TriviaElements.plist */; };
 		99C6162C194226D20057FC33 /* TriviaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6162B194226D20057FC33 /* TriviaElement.m */; };
 		99C6163219422DF90057FC33 /* TriviaCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6163119422DF90057FC33 /* TriviaCDTVC.m */; };
+		99C61635194230650057FC33 /* DefaultTriviaCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61634194230650057FC33 /* DefaultTriviaCDTVC.m */; };
+		99C6163B194233080057FC33 /* QuestionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6163A194233080057FC33 /* QuestionVC.m */; };
+		99C61644194237110057FC33 /* AnswerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61643194237110057FC33 /* AnswerVC.m */; };
 		99E383AF1940E33C0009524A /* StaffMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383AE1940E33C0009524A /* StaffMember.m */; };
 		99E383D819414E220009524A /* KimballinDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383D719414E220009524A /* KimballinDatabase.m */; };
 		99E383DB194150710009524A /* DefaultStaffDirectoryCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383DA194150710009524A /* DefaultStaffDirectoryCDTVC.m */; };
@@ -124,6 +127,12 @@
 		99C6162B194226D20057FC33 /* TriviaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaElement.m; sourceTree = "<group>"; };
 		99C6163019422DF90057FC33 /* TriviaCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaCDTVC.h; sourceTree = "<group>"; };
 		99C6163119422DF90057FC33 /* TriviaCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaCDTVC.m; sourceTree = "<group>"; };
+		99C61633194230650057FC33 /* DefaultTriviaCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTriviaCDTVC.h; sourceTree = "<group>"; };
+		99C61634194230650057FC33 /* DefaultTriviaCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTriviaCDTVC.m; sourceTree = "<group>"; };
+		99C61639194233080057FC33 /* QuestionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionVC.h; sourceTree = "<group>"; };
+		99C6163A194233080057FC33 /* QuestionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionVC.m; sourceTree = "<group>"; };
+		99C61642194237110057FC33 /* AnswerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerVC.h; sourceTree = "<group>"; };
+		99C61643194237110057FC33 /* AnswerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerVC.m; sourceTree = "<group>"; };
 		99E383AD1940E33C0009524A /* StaffMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMember.h; sourceTree = "<group>"; };
 		99E383AE1940E33C0009524A /* StaffMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMember.m; sourceTree = "<group>"; };
 		99E383D619414E220009524A /* KimballinDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KimballinDatabase.h; sourceTree = "<group>"; };
@@ -235,6 +244,12 @@
 				99183E8D193DB3C200BFCC4A /* StaffDirectoryCDTVC.m */,
 				99E383E2194154740009524A /* StaffMemberVC.h */,
 				99E383E3194154740009524A /* StaffMemberVC.m */,
+				99C61642194237110057FC33 /* AnswerVC.h */,
+				99C61643194237110057FC33 /* AnswerVC.m */,
+				99C61639194233080057FC33 /* QuestionVC.h */,
+				99C6163A194233080057FC33 /* QuestionVC.m */,
+				99C61633194230650057FC33 /* DefaultTriviaCDTVC.h */,
+				99C61634194230650057FC33 /* DefaultTriviaCDTVC.m */,
 				99C6163019422DF90057FC33 /* TriviaCDTVC.h */,
 				99C6163119422DF90057FC33 /* TriviaCDTVC.m */,
 				99A8CFF219357188006E60BE /* KimballinAppDelegate.h */,
@@ -444,11 +459,14 @@
 				991DEF451941C8AC006AA938 /* Event.m in Sources */,
 				99A8CFF419357188006E60BE /* KimballinAppDelegate.m in Sources */,
 				99183E8E193DB3C200BFCC4A /* StaffDirectoryCDTVC.m in Sources */,
+				99C61635194230650057FC33 /* DefaultTriviaCDTVC.m in Sources */,
 				99E383E4194154740009524A /* StaffMemberVC.m in Sources */,
 				99183E91193DB3EB00BFCC4A /* Model.xcdatamodeld in Sources */,
 				991DEF3A19419DE0006AA938 /* EventsCDTVC.m in Sources */,
 				99C6162C194226D20057FC33 /* TriviaElement.m in Sources */,
+				99C6163B194233080057FC33 /* QuestionVC.m in Sources */,
 				991DEF401941A36E006AA938 /* EventVC.m in Sources */,
+				99C61644194237110057FC33 /* AnswerVC.m in Sources */,
 				991DEF3D19419E12006AA938 /* DefaultEventsCDTVC.m in Sources */,
 				99A8CFF019357188006E60BE /* main.m in Sources */,
 				99183EA4193E35FB00BFCC4A /* CoreDataTableViewController.m in Sources */,

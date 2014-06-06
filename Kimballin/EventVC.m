@@ -46,16 +46,17 @@ static const int RADIUS = 100;
     self.endTimeLabel.text = endTimeString;
     self.locationLabel.text = self.event.location;
     
-    CLLocationCoordinate2D ctrpoint;
-    ctrpoint.latitude = [self.event.latitude doubleValue];
-    ctrpoint.longitude = [self.event.longitude doubleValue];
+    CLLocationCoordinate2D center;
+    center.latitude = [self.event.latitude doubleValue];
+    center.longitude = [self.event.longitude doubleValue];
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(ctrpoint, RADIUS, RADIUS);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(center, RADIUS, RADIUS);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = ctrpoint;
+    point.coordinate = center;
     point.title = self.event.location;
+    point.subtitle = self.event.name;
     [self.mapView addAnnotation:point];
 }
 

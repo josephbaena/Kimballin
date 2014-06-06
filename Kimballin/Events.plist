@@ -4,6 +4,20 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Kimball Goes to Ike&apos;s</string>
+		<key>location</key>
+		<string>Huang Engineering Center</string>
+		<key>startTime</key>
+		<date>2014-06-20T19:00:00Z</date>
+		<key>endTime</key>
+		<date>2014-06-20T20:30:00Z</date>
+		<key>latitude</key>
+		<real>37.428184</real>
+		<key>longitude</key>
+		<real>-122.174114</real>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Arts Jam 8</string>
 		<key>location</key>
 		<string>Main Lounge</string>

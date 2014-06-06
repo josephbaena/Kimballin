@@ -16,6 +16,8 @@
     //preload Core Data with demo data
     [[KimballinDatabase sharedDefaultKimballinDatabase] fetch];
     
+    [[UITabBar appearance] setTintColor:[UIColor orangeColor]];
+
     // Override point for customization after application launch.
     return YES;
 }

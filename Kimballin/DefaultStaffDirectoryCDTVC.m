@@ -12,7 +12,6 @@
 #import "StaffMember.h"
 
 @interface DefaultStaffDirectoryCDTVC ()
-
 @end
 
 @implementation DefaultStaffDirectoryCDTVC

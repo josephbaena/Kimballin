@@ -4,19 +4,19 @@
 <array>
 	<dict>
 		<key>question</key>
-		<string>When was Kimball built?</string>
+		<string>In what year was Kimball first opened to students?</string>
 		<key>answer</key>
 		<string>1991</string>
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>What is Kimball&apos;s theme?</string>
+		<string>What is Kimball&apos;s academic theme?</string>
 		<key>answer</key>
 		<string>Arts</string>
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>When did Kimball get its theme?</string>
+		<string>In what year did Kimball get its academic theme?</string>
 		<key>answer</key>
 		<string>2010</string>
 	</dict>
@@ -25,6 +25,12 @@
 		<string>How many residents live in Kimball as of 2014?</string>
 		<key>answer</key>
 		<string>216</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who are the current Resident Fellows in Kimball?</string>
+		<key>answer</key>
+		<string>Andrew and Erin Todhunter</string>
 	</dict>
 </array>
 </plist>

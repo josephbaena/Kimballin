@@ -41,7 +41,6 @@
 		99A8CFF019357188006E60BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A8CFEF19357188006E60BE /* main.m */; };
 		99A8CFF419357188006E60BE /* KimballinAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A8CFF319357188006E60BE /* KimballinAppDelegate.m */; };
 		99A8CFF719357188006E60BE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A8CFF519357188006E60BE /* Main_iPhone.storyboard */; };
-		99A8CFFA19357188006E60BE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A8CFF819357188006E60BE /* Main_iPad.storyboard */; };
 		99A8CFFF19357188006E60BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A8CFFE19357188006E60BE /* Images.xcassets */; };
 		99A8D00619357188006E60BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8D00519357188006E60BE /* XCTest.framework */; };
 		99A8D00719357188006E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE319357188006E60BE /* Foundation.framework */; };
@@ -115,7 +114,6 @@
 		99A8CFF219357188006E60BE /* KimballinAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimballinAppDelegate.h; sourceTree = "<group>"; };
 		99A8CFF319357188006E60BE /* KimballinAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimballinAppDelegate.m; sourceTree = "<group>"; };
 		99A8CFF619357188006E60BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		99A8CFF919357188006E60BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		99A8CFFE19357188006E60BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99A8D00419357188006E60BE /* KimballinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KimballinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A8D00519357188006E60BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -258,7 +256,6 @@
 				991DEF3019419AB0006AA938 /* Events.plist */,
 				99C61628194225330057FC33 /* TriviaElements.plist */,
 				99A8CFF519357188006E60BE /* Main_iPhone.storyboard */,
-				99A8CFF819357188006E60BE /* Main_iPad.storyboard */,
 				99183E92193DB3F300BFCC4A /* Core Data */,
 				99183E8B193DB38D00BFCC4A /* CDTVC */,
 				99A8CFFE19357188006E60BE /* Images.xcassets */,
@@ -416,7 +413,6 @@
 				991DEF1D19415BB6006AA938 /* Kelsey.jpg in Resources */,
 				991DEF2819415BEF006AA938 /* Nithya.jpg in Resources */,
 				991DEF2319415BB6006AA938 /* Aya.jpg in Resources */,
-				99A8CFFA19357188006E60BE /* Main_iPad.storyboard in Resources */,
 				99A8CFFF19357188006E60BE /* Images.xcassets in Resources */,
 				991DEF1C19415BB6006AA938 /* DavidN.jpg in Resources */,
 				991DEF1E19415BB6006AA938 /* Carey.jpg in Resources */,
@@ -506,14 +502,6 @@
 				99A8CFF619357188006E60BE /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		99A8CFF819357188006E60BE /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99A8CFF919357188006E60BE /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		99A8D00E19357188006E60BE /* InfoPlist.strings */ = {
@@ -610,7 +598,7 @@
 				INFOPLIST_FILE = "Kimballin/Kimballin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -626,7 +614,7 @@
 				INFOPLIST_FILE = "Kimballin/Kimballin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Joseph Baena</string>
+		<key>position</key>
+		<string>RCC</string>
+		<key>room</key>
+		<string>100</string>
+		<key>phone</key>
+		<string>925-984-3132</string>
+		<key>email</key>
+		<string>jbaena@stanford.edu</string>
+		<key>imageName</key>
+		<string>Joseph.jpg</string>
+	</dict>
+</array>
+</plist>

@@ -81,9 +81,9 @@ static const int RADIUS = 100;
         UIAlertView *alert;
         if (!success) {
             NSLog(@"Could not save calendar event: %@", [error localizedDescription]);
-            alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to save event to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to save event to your Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         } else {
-            alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Added entry to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Added event to your Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 
         }
         

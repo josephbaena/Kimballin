@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 #import "StaffMember.h"
 
-@interface StaffMemberVC : UIViewController
+@interface StaffMemberVC : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property StaffMember *staffMember;
 

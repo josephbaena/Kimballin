@@ -185,13 +185,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-o4-uhx">
+                                <rect key="frame" x="242" y="395" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="phoneButtonPressed:" destination="nE8-J0-Kdc" eventType="touchUpInside" id="0OZ-8J-14k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-mV-FxT">
+                                <rect key="frame" x="42" y="395" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButtonPressed:" destination="nE8-J0-Kdc" eventType="touchUpInside" id="nYs-ad-jj3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Kh-oR-fsK"/>
                     <connections>
+                        <outlet property="emailButton" destination="HLd-mV-FxT" id="X59-e2-SSt"/>
                         <outlet property="emailLabel" destination="5cm-cb-ChF" id="OVr-8u-mhw"/>
                         <outlet property="imageView" destination="R6a-il-cc6" id="P1F-2R-UiH"/>
+                        <outlet property="phoneButton" destination="Z5K-o4-uhx" id="jSe-un-dWx"/>
                         <outlet property="phoneLabel" destination="J8p-jB-q4h" id="Vhs-PP-dS1"/>
                         <outlet property="roomLabel" destination="nfc-Ex-fn5" id="nXf-ug-div"/>
                     </connections>

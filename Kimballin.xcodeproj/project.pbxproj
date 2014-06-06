@@ -26,6 +26,7 @@
 		991DEF2A19415BEF006AA938 /* DavidG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF2619415BEF006AA938 /* DavidG.jpg */; };
 		991DEF2B19415BEF006AA938 /* Andres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF2719415BEF006AA938 /* Andres.jpg */; };
 		991DEF2D19415C6B006AA938 /* James.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF2C19415C6B006AA938 /* James.jpg */; };
+		991DEF2F194165D1006AA938 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991DEF2E194165D1006AA938 /* MessageUI.framework */; };
 		99A8CFE419357188006E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE319357188006E60BE /* Foundation.framework */; };
 		99A8CFE619357188006E60BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE519357188006E60BE /* CoreGraphics.framework */; };
 		99A8CFE819357188006E60BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE719357188006E60BE /* UIKit.framework */; };
@@ -78,6 +79,7 @@
 		991DEF2619415BEF006AA938 /* DavidG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DavidG.jpg; sourceTree = "<group>"; };
 		991DEF2719415BEF006AA938 /* Andres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Andres.jpg; sourceTree = "<group>"; };
 		991DEF2C19415C6B006AA938 /* James.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = James.jpg; sourceTree = "<group>"; };
+		991DEF2E194165D1006AA938 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		99A8CFE019357188006E60BE /* Kimballin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimballin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A8CFE319357188006E60BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99A8CFE519357188006E60BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991DEF2F194165D1006AA938 /* MessageUI.framework in Frameworks */,
 				99A8CFE619357188006E60BE /* CoreGraphics.framework in Frameworks */,
 				99A8CFE819357188006E60BE /* UIKit.framework in Frameworks */,
 				99A8CFE419357188006E60BE /* Foundation.framework in Frameworks */,
@@ -172,6 +175,7 @@
 		99A8CFE219357188006E60BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				991DEF2E194165D1006AA938 /* MessageUI.framework */,
 				99A8CFE319357188006E60BE /* Foundation.framework */,
 				99A8CFE519357188006E60BE /* CoreGraphics.framework */,
 				99A8CFE719357188006E60BE /* UIKit.framework */,
@@ -514,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kimballin/Kimballin-Prefix.pch";
 				INFOPLIST_FILE = "Kimballin/Kimballin-Info.plist";
@@ -527,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kimballin/Kimballin-Prefix.pch";
 				INFOPLIST_FILE = "Kimballin/Kimballin-Info.plist";

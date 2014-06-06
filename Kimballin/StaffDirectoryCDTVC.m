@@ -28,7 +28,7 @@
     } else {
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"StaffMember"];
         request.predicate = nil;
-        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)]];
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"position" ascending:YES selector:@selector(localizedStandardCompare:)]];
                                     
         self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     }

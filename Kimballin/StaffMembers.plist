@@ -4,6 +4,202 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Qudus Lawal</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>371</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>qudusrl17@stanford.edu</string>
+		<key>imageName</key>
+		<string>Qudus.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>David Grunzweig</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>315</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>?</string>
+		<key>imageName</key>
+		<string>DavidG.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nithya Vijayakumar</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>271</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>nithyapv@stanford.edu</string>
+		<key>imageName</key>
+		<string>Nithya.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Carey Phelps</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>215</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>cvphelps@stanford.edu</string>
+		<key>imageName</key>
+		<string>Carey.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>James Huynh</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>171</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>?</string>
+		<key>imageName</key>
+		<string>James.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Andres Gutierrez</string>
+		<key>position</key>
+		<string>RA</string>
+		<key>room</key>
+		<string>115</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>?</string>
+		<key>imageName</key>
+		<string>Andres.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kelsey Lange</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>367</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>knlange@stanford.edu</string>
+		<key>imageName</key>
+		<string>Kelsey.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mai Bui</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>311</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>mbui@stanford.edu</string>
+		<key>imageName</key>
+		<string>Mai.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Catherine Chen</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>267</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>cchen92@stanford.edu</string>
+		<key>imageName</key>
+		<string>Catherine.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Aya Yagi</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>167</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>ayayagi@stanford.edu</string>
+		<key>imageName</key>
+		<string>Aya.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Carly Lave</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>111</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>cmlave@stanford.edu</string>
+		<key>imageName</key>
+		<string>Carly.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Karina Liker</string>
+		<key>position</key>
+		<string>PHE</string>
+		<key>room</key>
+		<string>238</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>kliker@stanford.edu</string>
+		<key>imageName</key>
+		<string>Karina.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>David Nguyen</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>211</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>luna2014@stanford.edu</string>
+		<key>imageName</key>
+		<string>DavidN.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jorge Aguirre</string>
+		<key>position</key>
+		<string>RCC</string>
+		<key>room</key>
+		<string>200</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>jlaguirre@stanford.edu</string>
+		<key>imageName</key>
+		<string>Jorge.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Joseph Baena</string>
 		<key>position</key>
 		<string>RCC</string>

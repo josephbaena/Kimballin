@@ -35,27 +35,11 @@
     self.roomLabel.text = self.staffMember.room;
 
     //scale the staff photo so that it maintains original aspect ratio
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     UIImage *img = [UIImage imageNamed:self.staffMember.imageName];
-    UIImage *staffPhoto = [self resizeImageMaintainAspectRatio:img scaledToWidth:self.imageView.bounds.size.width];
-    [self.imageView setImage:staffPhoto];
+    [self.imageView setImage:img];
 }
 
-- (UIImage*)resizeImageMaintainAspectRatio:(UIImage*)img scaledToWidth:(float)viewWidth
-{
-    float oldWidth = img.size.width;
-    float oldHeight = img.size.height;
-    float newWidth = viewWidth;
-    float scaleFactor = newWidth / oldWidth;
-    
-    float newHeight = oldHeight * scaleFactor;
-    
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [img drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return newImage;
-}
 
 - (IBAction)phoneButtonPressed:(UIButton *)sender {
     NSString *phoneNoDashes = [self.staffMember.phone stringByReplacingOccurrencesOfString:@"-" withString:@""];

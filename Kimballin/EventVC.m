@@ -63,7 +63,8 @@ static const int RADIUS = 100;
     [self.mapView addAnnotation:point];
 }
 
-- (IBAction)calendarButtonPressed:(UIButton *)sender {
+- (IBAction)calendarButtonPressed:(UIButton *)sender
+{
     EKEventStore *store = [[EKEventStore alloc] init];
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         if (!granted) {
@@ -77,14 +78,11 @@ static const int RADIUS = 100;
         
         NSError *err = nil;
         BOOL success = [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
-        NSLog(@"In calendarButtonPressed");
         UIAlertView *alert;
         if (!success) {
-            NSLog(@"No success");
             NSLog(@"Could not save calendar event: %@", [error localizedDescription]);
             alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to save event to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         } else {
-            NSLog(@"Success");
             alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Added entry to Calendar." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 
         }
@@ -92,7 +90,6 @@ static const int RADIUS = 100;
         [alert performSelectorOnMainThread:@selector(show)
                                 withObject:nil
                              waitUntilDone:NO];
-        [alert show];
     }];
 }
 

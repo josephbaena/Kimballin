@@ -10,7 +10,6 @@
 #import "StaffMember.h"
 
 @interface StaffDirectoryCDTVC ()
-
 @end
 
 @implementation StaffDirectoryCDTVC
@@ -27,7 +26,7 @@
         self.managedObjectContext = nil;
     } else {
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"StaffMember"];
-        request.predicate = nil;
+        request.predicate = nil; //get all staff members
         request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"position" ascending:YES selector:@selector(localizedStandardCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)]];
                                     
         self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];

@@ -27,7 +27,7 @@
 {
     [super viewWillAppear:animated];
      NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"MM/dd/yyyy hh:mm:ss a"];
+    [formatter setDateFormat:@"MM/dd/yy hh:mm a"];
     
     [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"US/Pacific"]];
     

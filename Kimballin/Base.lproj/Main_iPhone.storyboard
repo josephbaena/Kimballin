@@ -123,9 +123,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4lV-VW-uDh">
-                                <rect key="frame" x="20" y="171" width="280" height="226"/>
+                                <rect key="frame" x="20" y="169" width="280" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kos-jA-CUh">
+                                <rect key="frame" x="146" y="395" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add to Reminders">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remindersButtonPressed:" destination="Afe-1m-qwW" eventType="touchUpInside" id="8ac-JL-jaz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -134,6 +145,7 @@
                         <outlet property="endTimeLabel" destination="ll0-fn-6g2" id="84J-pu-Hf3"/>
                         <outlet property="locationLabel" destination="t4s-hs-GMF" id="LAf-zv-rXb"/>
                         <outlet property="mapView" destination="4lV-VW-uDh" id="rIK-fM-gsD"/>
+                        <outlet property="remindersButton" destination="Kos-jA-CUh" id="4rH-OL-ZRA"/>
                         <outlet property="startTimeLabel" destination="7NP-eB-n3X" id="AnE-6q-fOU"/>
                     </connections>
                 </viewController>

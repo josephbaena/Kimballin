@@ -8,12 +8,15 @@
 
 #import "EventVC.h"
 #import <MapKit/MapKit.h>
+#import <EventKit/EKEventStore.h>
+#import <EventKit/EKReminder.h>
 
 @interface EventVC () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIButton *remindersButton;
 @end
 
 @implementation EventVC
@@ -59,5 +62,32 @@ static const int RADIUS = 100;
     point.subtitle = self.event.name;
     [self.mapView addAnnotation:point];
 }
+
+- (IBAction)remindersButtonPressed:(UIButton *)sender {
+    EKEventStore *store = [[EKEventStore alloc] init];
+    [store requestAccessToEntityType:EKEntityTypeReminder
+                          completion:^(BOOL granted, NSError *error) {
+                              if (!granted) {
+                                NSLog(@"Permission not granted");
+                              return;  
+                              } else {
+                                  EKReminder *reminder = [EKReminder reminderWithEventStore:store];
+                                  [reminder setTitle:self.event.name];
+                                  EKCalendar *defaultReminderList = [store defaultCalendarForNewReminders];
+                                  
+                                  [reminder setCalendar:defaultReminderList];
+                                  
+                                  NSError *error = nil;
+                                  BOOL success = [store saveReminder:reminder
+                                                              commit:YES
+                                                               error:&error];
+                                  if (!success) {
+                                      NSLog(@"Could not save reminder: %@", [error localizedDescription]);
+                                  } else {
+                                      NSLog(@"Reminder created!");
+                                  }
+                              }
+                          }];
+   }
 
 @end

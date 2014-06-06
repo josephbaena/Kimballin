@@ -33,6 +33,8 @@
 		991DEF401941A36E006AA938 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF3F1941A36E006AA938 /* EventVC.m */; };
 		991DEF421941BB6C006AA938 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991DEF411941BB6C006AA938 /* MapKit.framework */; };
 		991DEF451941C8AC006AA938 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF441941C8AC006AA938 /* Event.m */; };
+		991DEF481941CF0C006AA938 /* PhotoAlbumCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF471941CF0C006AA938 /* PhotoAlbumCDTVC.m */; };
+		991DEF4A1941D34C006AA938 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991DEF491941D34C006AA938 /* EventKit.framework */; };
 		99A8CFE419357188006E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE319357188006E60BE /* Foundation.framework */; };
 		99A8CFE619357188006E60BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE519357188006E60BE /* CoreGraphics.framework */; };
 		99A8CFE819357188006E60BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE719357188006E60BE /* UIKit.framework */; };
@@ -96,6 +98,9 @@
 		991DEF411941BB6C006AA938 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		991DEF431941C8AC006AA938 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		991DEF441941C8AC006AA938 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		991DEF461941CF0C006AA938 /* PhotoAlbumCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumCDTVC.h; sourceTree = "<group>"; };
+		991DEF471941CF0C006AA938 /* PhotoAlbumCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumCDTVC.m; sourceTree = "<group>"; };
+		991DEF491941D34C006AA938 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		99A8CFE019357188006E60BE /* Kimballin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimballin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A8CFE319357188006E60BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99A8CFE519357188006E60BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991DEF4A1941D34C006AA938 /* EventKit.framework in Frameworks */,
 				991DEF421941BB6C006AA938 /* MapKit.framework in Frameworks */,
 				991DEF2F194165D1006AA938 /* MessageUI.framework in Frameworks */,
 				99A8CFE619357188006E60BE /* CoreGraphics.framework in Frameworks */,
@@ -194,6 +200,7 @@
 		99A8CFE219357188006E60BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				991DEF491941D34C006AA938 /* EventKit.framework */,
 				991DEF411941BB6C006AA938 /* MapKit.framework */,
 				991DEF2E194165D1006AA938 /* MessageUI.framework */,
 				99A8CFE319357188006E60BE /* Foundation.framework */,
@@ -221,6 +228,8 @@
 				99183E8D193DB3C200BFCC4A /* StaffDirectoryCDTVC.m */,
 				99E383E2194154740009524A /* StaffMemberVC.h */,
 				99E383E3194154740009524A /* StaffMemberVC.m */,
+				991DEF461941CF0C006AA938 /* PhotoAlbumCDTVC.h */,
+				991DEF471941CF0C006AA938 /* PhotoAlbumCDTVC.m */,
 				99A8CFF219357188006E60BE /* KimballinAppDelegate.h */,
 				99A8CFF319357188006E60BE /* KimballinAppDelegate.m */,
 				991A316E193EC81500FFA335 /* StaffMembers.plist */,
@@ -414,6 +423,7 @@
 				991DEF3A19419DE0006AA938 /* EventsCDTVC.m in Sources */,
 				991DEF401941A36E006AA938 /* EventVC.m in Sources */,
 				991DEF3D19419E12006AA938 /* DefaultEventsCDTVC.m in Sources */,
+				991DEF481941CF0C006AA938 /* PhotoAlbumCDTVC.m in Sources */,
 				99A8CFF019357188006E60BE /* main.m in Sources */,
 				99183EA4193E35FB00BFCC4A /* CoreDataTableViewController.m in Sources */,
 			);

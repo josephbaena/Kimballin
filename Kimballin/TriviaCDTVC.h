@@ -1,5 +1,5 @@
 //
-//  PhotoAlbumCDTVC.h
+//  TriviaCDTVC.h
 //  Kimballin
 //
 //  Created by Joseph Baena on 6/6/14.
@@ -8,7 +8,7 @@
 
 #import "CoreDataTableViewController.h"
 
-@interface PhotoAlbumCDTVC : CoreDataTableViewController
+@interface TriviaCDTVC : CoreDataTableViewController
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

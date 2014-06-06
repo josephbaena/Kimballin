@@ -7,12 +7,13 @@
 //
 
 #import "EventVC.h"
+#import <MapKit/MapKit.h>
 
-@interface EventVC ()
+@interface EventVC () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
 
 @implementation EventVC
@@ -21,6 +22,12 @@
 {
     _event = event;
     self.title = event.name;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.mapView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -38,9 +45,17 @@
     self.endTimeLabel.text = endTimeString;
     self.locationLabel.text = self.event.location;
     
-    NSLog(@"startTime = %@", startTimeString);
-    NSLog(@"endTime = %@", endTimeString);
-    NSLog(@"locationLabel = %@", self.event.location);
-
+    CLLocationCoordinate2D ctrpoint;
+    ctrpoint.latitude = 37.425167;
+    ctrpoint.longitude = -122.161843;
+    
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(ctrpoint, 250, 250);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = ctrpoint;
+    point.title = self.event.location;
+    [self.mapView addAnnotation:point];
 }
+
 @end

@@ -123,7 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4lV-VW-uDh">
-                                <rect key="frame" x="20" y="183" width="280" height="202"/>
+                                <rect key="frame" x="20" y="171" width="280" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
                         </subviews>
@@ -133,6 +133,7 @@
                     <connections>
                         <outlet property="endTimeLabel" destination="ll0-fn-6g2" id="84J-pu-Hf3"/>
                         <outlet property="locationLabel" destination="t4s-hs-GMF" id="LAf-zv-rXb"/>
+                        <outlet property="mapView" destination="4lV-VW-uDh" id="rIK-fM-gsD"/>
                         <outlet property="startTimeLabel" destination="7NP-eB-n3X" id="AnE-6q-fOU"/>
                     </connections>
                 </viewController>

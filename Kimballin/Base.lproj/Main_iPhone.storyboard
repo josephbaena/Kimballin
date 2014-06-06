@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-488" y="457"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - Upcoming Events-->
         <scene sceneID="dW4-bk-Bch">
             <objects>
                 <tableViewController id="Ae7-v2-Qzw" sceneMemberID="viewController">
@@ -47,13 +47,13 @@
                             <outlet property="delegate" destination="Ae7-v2-Qzw" id="YRO-lb-zle"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NbF-vx-9fa"/>
+                    <navigationItem key="navigationItem" title="Upcoming Events" id="NbF-vx-9fa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMr-pr-YVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="-259"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - Photo Album-->
         <scene sceneID="PS6-z2-EWJ">
             <objects>
                 <tableViewController id="ONc-SO-7Wu" sceneMemberID="viewController">
@@ -76,13 +76,13 @@
                             <outlet property="delegate" destination="ONc-SO-7Wu" id="f3a-x5-Hed"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Saf-Fc-nZx"/>
+                    <navigationItem key="navigationItem" title="Photo Album" id="Saf-Fc-nZx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pao-SR-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="442"/>
         </scene>
-        <!--Default Staff DirectoryCDTVC-->
+        <!--Default Staff DirectoryCDTVC - Staff Directory-->
         <scene sceneID="bxn-B4-7YI">
             <objects>
                 <tableViewController id="5EI-Bb-Yyq" customClass="DefaultStaffDirectoryCDTVC" sceneMemberID="viewController">
@@ -124,7 +124,7 @@
                             <outlet property="delegate" destination="5EI-Bb-Yyq" id="hht-25-3Vp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="79q-9g-wZq"/>
+                    <navigationItem key="navigationItem" title="Staff Directory" id="79q-9g-wZq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s04-EY-kVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

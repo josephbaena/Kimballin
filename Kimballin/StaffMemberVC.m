@@ -24,13 +24,39 @@
     self.title = staffMember.name;
 }
 
+- (UIImage *)thumbnailOfSize:(CGSize)size {
+    if( self.previewThumbnail )
+    	return self.previewThumbnail; // returned cached thumbnail
+    
+    UIGraphicsBeginImageContext(size);
+    
+    // draw scaled image into thumbnail context
+    [self.preview drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    
+    UIImage *newThumbnail = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // pop the context
+    UIGraphicsEndImageContext();
+    
+    if(newThumbnail == nil)
+        NSLog(@"could not scale image");
+    
+    self.previewThumbnail = newThumbnail;
+    
+    return self.previewThumbnail;
+}
+
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     self.phoneLabel.text = self.staffMember.phone;
     self.emailLabel.text = self.staffMember.email;
     self.roomLabel.text = self.staffMember.room;
-    [self.imageView setImage:[UIImage imageNamed:self.staffMember.imageName]];
+    
+    //TODO: scale the image size
+    UIImage *img = [UIImage imageNamed:self.staffMember.imageName];
+    [self.imageView setImage:img];
 }
 
 @end

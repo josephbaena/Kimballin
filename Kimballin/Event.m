@@ -2,7 +2,7 @@
 //  Event.m
 //  Kimballin
 //
-//  Created by Joseph Baena on 6/5/14.
+//  Created by Joseph Baena on 6/6/14.
 //  Copyright (c) 2014 Stanford University. All rights reserved.
 //
 
@@ -15,5 +15,7 @@
 @dynamic location;
 @dynamic name;
 @dynamic startTime;
+@dynamic latitude;
+@dynamic longitude;
 
 @end

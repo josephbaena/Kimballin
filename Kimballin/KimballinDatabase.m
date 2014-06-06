@@ -101,8 +101,8 @@
                 event.location = [dict objectForKey:@"location"];
                 event.startTime = [dict objectForKey:@"startTime"];
                 event.endTime = [dict objectForKey:@"endTime"];
-                
-                
+                event.latitude = [dict objectForKey:@"latitude"];
+                event.longitude = [dict objectForKey:@"longitude"];
                 
                 NSError *err = nil;
                 [self.managedObjectContext save:&err];

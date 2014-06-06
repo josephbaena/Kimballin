@@ -30,6 +30,7 @@
     self.mapView.delegate = self;
 }
 
+static const int RADIUS = 100;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -46,10 +47,10 @@
     self.locationLabel.text = self.event.location;
     
     CLLocationCoordinate2D ctrpoint;
-    ctrpoint.latitude = 37.425167;
-    ctrpoint.longitude = -122.161843;
+    ctrpoint.latitude = [self.event.latitude doubleValue];
+    ctrpoint.longitude = [self.event.longitude doubleValue];
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(ctrpoint, 250, 250);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(ctrpoint, RADIUS, RADIUS);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];

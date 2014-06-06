@@ -11,6 +11,10 @@
 		<date>2014-06-10T02:30:00Z</date>
 		<key>endTime</key>
 		<date>2014-06-10T05:00:00Z</date>
+		<key>latitude</key>
+		<real>37.425167</real>
+		<key>longitude</key>
+		<real>-122.161843</real>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -21,6 +25,10 @@
 		<date>2014-06-15T03:00:00Z</date>
 		<key>endTime</key>
 		<date>2014-06-15T05:00:00Z</date>
+		<key>latitude</key>
+		<real>37.42501</real>
+		<key>longitude</key>
+		<real>-122.161894</real>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -31,6 +39,10 @@
 		<date>2014-06-16T16:00:00Z</date>
 		<key>endTime</key>
 		<date>2014-06-16T18:00:00Z</date>
+		<key>latitude</key>
+		<real>37.417725</real>
+		<key>longitude</key>
+		<real>-122.17484</real>
 	</dict>
 </array>
 </plist>

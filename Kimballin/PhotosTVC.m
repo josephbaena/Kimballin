@@ -19,7 +19,6 @@
 - (void)specifyEvent:(Event *)event
 {
     _event = event;
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -30,6 +29,18 @@
     for (Photo *p in self.event.photos) {
         [self.photos addObject:p];
     }
+    
+    //sort the photos by imageName
+    NSArray *sortedArray;
+    sortedArray = [self.photos sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        Photo *first = (Photo *)a;
+        Photo *second = (Photo *)b;
+        NSString *imageNameFirst = first.imageName;
+        NSString *imageNameSecond = second.imageName;
+        return [imageNameFirst compare:imageNameSecond];
+    }];
+    
+    self.photos = [NSMutableArray arrayWithArray:sortedArray];
     
     self.title = @"Photos";
     dispatch_async(dispatch_get_main_queue(), ^{

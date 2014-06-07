@@ -8,6 +8,7 @@
 
 #import "PhotosTVC.h"
 #import "Photo.h"
+#import "ImageVC.h"
 
 @interface PhotosTVC ()
 @property (strong, nonatomic) NSMutableArray *photos;
@@ -36,8 +37,6 @@
     }
     
     self.title = @"Photos";
-    
-    NSLog(@"self.photos = %@", self.photos);
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
     });
@@ -64,5 +63,22 @@
     return cell;
 }
 
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqualToString:@"Display Photo"]) {
+                if ([segue.destinationViewController isKindOfClass:[ImageVC class]]) {
+                    ImageVC *vc = (ImageVC *)segue.destinationViewController;
+                    Photo *photo = [self.photos objectAtIndex:indexPath.row];
+                    [vc setPhoto:photo];
+                }
+            }
+        }
+    }
+}
 
 @end

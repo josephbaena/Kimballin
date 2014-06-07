@@ -2,6 +2,7 @@
 #import "StaffMember.h"
 #import "Event.h"
 #import "TriviaElement.h"
+#import "Photo.h"
 
 @interface KimballinDatabase()
 @property (nonatomic, readwrite, strong) NSManagedObjectContext *managedObjectContext;
@@ -92,26 +93,7 @@
             }
     
         }
-        
-        NSString *eventsPath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
-        NSArray *eventsArray = [NSArray arrayWithContentsOfFile:eventsPath];
-        for (NSDictionary *dict in eventsArray) {
-            @try {
-                Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
-                event.name = [dict objectForKey:@"name"];
-                event.location = [dict objectForKey:@"location"];
-                event.startTime = [dict objectForKey:@"startTime"];
-                event.endTime = [dict objectForKey:@"endTime"];
-                event.latitude = [dict objectForKey:@"latitude"];
-                event.longitude = [dict objectForKey:@"longitude"];
-                
-                NSError *err = nil;
-                [self.managedObjectContext save:&err];
-            } @catch (NSException *ex) {
-                NSLog(@"Exception: %@", ex);
-            }
-        }
-     
+    
         NSString *triviaElementsPath = [[NSBundle mainBundle] pathForResource:@"TriviaElements" ofType:@"plist"];
         NSArray *triviaElementsArray = [NSArray arrayWithContentsOfFile:triviaElementsPath];
         for (NSDictionary *dict in triviaElementsArray) {
@@ -126,6 +108,48 @@
                 NSLog(@"Exception: %@", ex);
             }
         }
+        
+        NSMutableDictionary *events = [[NSMutableDictionary alloc] init];
+        NSString *eventsPath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+        NSArray *eventsArray = [NSArray arrayWithContentsOfFile:eventsPath];
+        for (NSDictionary *dict in eventsArray) {
+            @try {
+                Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+                event.name = [dict objectForKey:@"name"];
+                event.location = [dict objectForKey:@"location"];
+                event.startTime = [dict objectForKey:@"startTime"];
+                event.endTime = [dict objectForKey:@"endTime"];
+                event.latitude = [dict objectForKey:@"latitude"];
+                event.longitude = [dict objectForKey:@"longitude"];
+
+                NSError *err = nil;
+                [self.managedObjectContext save:&err];
+                
+                [events setObject:event forKey:event.name];
+            } @catch (NSException *ex) {
+                NSLog(@"Exception: %@", ex);
+            }
+        }
+        
+        NSString *photosPath = [[NSBundle mainBundle] pathForResource:@"Photos" ofType:@"plist"];
+        NSArray *photosArray = [NSArray arrayWithContentsOfFile:photosPath];
+        for (NSDictionary *dict in photosArray) {
+            @try {
+                Photo *photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:self.managedObjectContext];
+                photo.imageName = [dict objectForKey:@"imageName"];
+                NSLog(@"forEvent = %@", [dict objectForKey:@"forEvent"]);
+                NSLog(@"event = %@", [events objectForKey:[dict objectForKey:@"forEvent"]]);
+                photo.forEvent = [events objectForKey:[dict objectForKey:@"forEvent"]];
+                NSLog(@"photo for event = %@", photo.forEvent);
+                NSError *err = nil;
+                [self.managedObjectContext save:&err];
+                
+            } @catch (NSException *ex) {
+                NSLog(@"Exception: %@", ex);
+            }
+        }
+  
+        
 
     }
 }

@@ -12,7 +12,7 @@
 
 @interface TriviaElement : NSManagedObject
 
-@property (nonatomic, retain) NSString * question;
 @property (nonatomic, retain) NSString * answer;
+@property (nonatomic, retain) NSString * question;
 
 @end

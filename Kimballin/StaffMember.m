@@ -2,7 +2,7 @@
 //  StaffMember.m
 //  Kimballin
 //
-//  Created by Joseph Baena on 6/5/14.
+//  Created by Joseph Baena on 6/6/14.
 //  Copyright (c) 2014 Stanford University. All rights reserved.
 //
 
@@ -12,11 +12,11 @@
 @implementation StaffMember
 
 @dynamic email;
+@dynamic imageName;
 @dynamic name;
 @dynamic phone;
 @dynamic photo;
 @dynamic position;
 @dynamic room;
-@dynamic imageName;
 
 @end

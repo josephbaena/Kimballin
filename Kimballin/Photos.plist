@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>jam1.jpg</string>
+		<key>forEvent</key>
+		<string>Arts Jam</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>jam2.jpg</string>
+		<key>forEvent</key>
+		<string>Arts Jam</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>jam3.jpg</string>
+		<key>forEvent</key>
+		<string>Arts Jam</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>jam4.jpg</string>
+		<key>forEvent</key>
+		<string>Arts Jam</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>dish.jpg</string>
+		<key>forEvent</key>
+		<string>Hike the Dish</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>espresso.jpg</string>
+		<key>forEvent</key>
+		<string>Café Night</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>ikes.jpg</string>
+		<key>forEvent</key>
+		<string>Kimball Goes to Ike&apos;s</string>
+	</dict>
+</array>
+</plist>

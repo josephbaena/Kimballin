@@ -32,7 +32,6 @@
 		991DEF3D19419E12006AA938 /* DefaultEventsCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF3C19419E12006AA938 /* DefaultEventsCDTVC.m */; };
 		991DEF401941A36E006AA938 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF3F1941A36E006AA938 /* EventVC.m */; };
 		991DEF421941BB6C006AA938 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991DEF411941BB6C006AA938 /* MapKit.framework */; };
-		991DEF451941C8AC006AA938 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DEF441941C8AC006AA938 /* Event.m */; };
 		991DEF4A1941D34C006AA938 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991DEF491941D34C006AA938 /* EventKit.framework */; };
 		99A8CFE419357188006E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE319357188006E60BE /* Foundation.framework */; };
 		99A8CFE619357188006E60BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8CFE519357188006E60BE /* CoreGraphics.framework */; };
@@ -48,15 +47,26 @@
 		99A8D01019357188006E60BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A8D00E19357188006E60BE /* InfoPlist.strings */; };
 		99A8D01219357188006E60BE /* KimballinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A8D01119357188006E60BE /* KimballinTests.m */; };
 		99C61629194225330057FC33 /* TriviaElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C61628194225330057FC33 /* TriviaElements.plist */; };
-		99C6162C194226D20057FC33 /* TriviaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6162B194226D20057FC33 /* TriviaElement.m */; };
 		99C6163219422DF90057FC33 /* TriviaCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6163119422DF90057FC33 /* TriviaCDTVC.m */; };
 		99C61635194230650057FC33 /* DefaultTriviaCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61634194230650057FC33 /* DefaultTriviaCDTVC.m */; };
 		99C6163B194233080057FC33 /* QuestionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6163A194233080057FC33 /* QuestionVC.m */; };
 		99C61644194237110057FC33 /* AnswerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61643194237110057FC33 /* AnswerVC.m */; };
-		99E383AF1940E33C0009524A /* StaffMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383AE1940E33C0009524A /* StaffMember.m */; };
 		99E383D819414E220009524A /* KimballinDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383D719414E220009524A /* KimballinDatabase.m */; };
 		99E383DB194150710009524A /* DefaultStaffDirectoryCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383DA194150710009524A /* DefaultStaffDirectoryCDTVC.m */; };
 		99E383E4194154740009524A /* StaffMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383E3194154740009524A /* StaffMemberVC.m */; };
+		99EEFC87194283AB003C9961 /* jam1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFC83194283AB003C9961 /* jam1.jpg */; };
+		99EEFC88194283AB003C9961 /* jam2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFC84194283AB003C9961 /* jam2.jpg */; };
+		99EEFC89194283AB003C9961 /* jam3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFC85194283AB003C9961 /* jam3.jpg */; };
+		99EEFC8A194283AB003C9961 /* jam4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFC86194283AB003C9961 /* jam4.jpg */; };
+		99EEFC9919428565003C9961 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFC9819428565003C9961 /* Photo.m */; };
+		99EEFC9C19428566003C9961 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFC9B19428566003C9961 /* Event.m */; };
+		99EEFC9F19428566003C9961 /* TriviaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFC9E19428566003C9961 /* TriviaElement.m */; };
+		99EEFCA219428566003C9961 /* StaffMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFCA119428566003C9961 /* StaffMember.m */; };
+		99EEFCA4194285D4003C9961 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFCA3194285D4003C9961 /* Photos.plist */; };
+		99EEFCA6194298DE003C9961 /* dish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFCA5194298DE003C9961 /* dish.jpg */; };
+		99EEFCA81942991C003C9961 /* espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFCA71942991C003C9961 /* espresso.jpg */; };
+		99EEFCAA19429965003C9961 /* ikes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFCA919429965003C9961 /* ikes.jpg */; };
+		99EEFCB01942A44D003C9961 /* PhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFCAF1942A44D003C9961 /* PhotosTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +110,6 @@
 		991DEF3E1941A36E006AA938 /* EventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
 		991DEF3F1941A36E006AA938 /* EventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
 		991DEF411941BB6C006AA938 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		991DEF431941C8AC006AA938 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		991DEF441941C8AC006AA938 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		991DEF491941D34C006AA938 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		99A8CFE019357188006E60BE /* Kimballin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimballin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A8CFE319357188006E60BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,8 +129,6 @@
 		99A8D00F19357188006E60BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99A8D01119357188006E60BE /* KimballinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimballinTests.m; sourceTree = "<group>"; };
 		99C61628194225330057FC33 /* TriviaElements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TriviaElements.plist; sourceTree = "<group>"; };
-		99C6162A194226D20057FC33 /* TriviaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaElement.h; sourceTree = "<group>"; };
-		99C6162B194226D20057FC33 /* TriviaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaElement.m; sourceTree = "<group>"; };
 		99C6163019422DF90057FC33 /* TriviaCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaCDTVC.h; sourceTree = "<group>"; };
 		99C6163119422DF90057FC33 /* TriviaCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaCDTVC.m; sourceTree = "<group>"; };
 		99C61633194230650057FC33 /* DefaultTriviaCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTriviaCDTVC.h; sourceTree = "<group>"; };
@@ -131,14 +137,30 @@
 		99C6163A194233080057FC33 /* QuestionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionVC.m; sourceTree = "<group>"; };
 		99C61642194237110057FC33 /* AnswerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerVC.h; sourceTree = "<group>"; };
 		99C61643194237110057FC33 /* AnswerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerVC.m; sourceTree = "<group>"; };
-		99E383AD1940E33C0009524A /* StaffMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMember.h; sourceTree = "<group>"; };
-		99E383AE1940E33C0009524A /* StaffMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMember.m; sourceTree = "<group>"; };
 		99E383D619414E220009524A /* KimballinDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KimballinDatabase.h; sourceTree = "<group>"; };
 		99E383D719414E220009524A /* KimballinDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KimballinDatabase.m; sourceTree = "<group>"; };
 		99E383D9194150710009524A /* DefaultStaffDirectoryCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultStaffDirectoryCDTVC.h; sourceTree = "<group>"; };
 		99E383DA194150710009524A /* DefaultStaffDirectoryCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultStaffDirectoryCDTVC.m; sourceTree = "<group>"; };
 		99E383E2194154740009524A /* StaffMemberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMemberVC.h; sourceTree = "<group>"; };
 		99E383E3194154740009524A /* StaffMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMemberVC.m; sourceTree = "<group>"; };
+		99EEFC83194283AB003C9961 /* jam1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jam1.jpg; sourceTree = "<group>"; };
+		99EEFC84194283AB003C9961 /* jam2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jam2.jpg; sourceTree = "<group>"; };
+		99EEFC85194283AB003C9961 /* jam3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jam3.jpg; sourceTree = "<group>"; };
+		99EEFC86194283AB003C9961 /* jam4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jam4.jpg; sourceTree = "<group>"; };
+		99EEFC9719428565003C9961 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		99EEFC9819428565003C9961 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		99EEFC9A19428566003C9961 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		99EEFC9B19428566003C9961 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		99EEFC9D19428566003C9961 /* TriviaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaElement.h; sourceTree = "<group>"; };
+		99EEFC9E19428566003C9961 /* TriviaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaElement.m; sourceTree = "<group>"; };
+		99EEFCA019428566003C9961 /* StaffMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMember.h; sourceTree = "<group>"; };
+		99EEFCA119428566003C9961 /* StaffMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMember.m; sourceTree = "<group>"; };
+		99EEFCA3194285D4003C9961 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		99EEFCA5194298DE003C9961 /* dish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dish.jpg; sourceTree = "<group>"; };
+		99EEFCA71942991C003C9961 /* espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = espresso.jpg; sourceTree = "<group>"; };
+		99EEFCA919429965003C9961 /* ikes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ikes.jpg; sourceTree = "<group>"; };
+		99EEFCAE1942A44D003C9961 /* PhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTVC.h; sourceTree = "<group>"; };
+		99EEFCAF1942A44D003C9961 /* PhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,12 +204,14 @@
 			isa = PBXGroup;
 			children = (
 				99183E8F193DB3EB00BFCC4A /* Model.xcdatamodeld */,
-				99C6162A194226D20057FC33 /* TriviaElement.h */,
-				99C6162B194226D20057FC33 /* TriviaElement.m */,
-				991DEF431941C8AC006AA938 /* Event.h */,
-				991DEF441941C8AC006AA938 /* Event.m */,
-				99E383AD1940E33C0009524A /* StaffMember.h */,
-				99E383AE1940E33C0009524A /* StaffMember.m */,
+				99EEFCA019428566003C9961 /* StaffMember.h */,
+				99EEFCA119428566003C9961 /* StaffMember.m */,
+				99EEFC9D19428566003C9961 /* TriviaElement.h */,
+				99EEFC9E19428566003C9961 /* TriviaElement.m */,
+				99EEFC9A19428566003C9961 /* Event.h */,
+				99EEFC9B19428566003C9961 /* Event.m */,
+				99EEFC9719428565003C9961 /* Photo.h */,
+				99EEFC9819428565003C9961 /* Photo.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -230,6 +254,8 @@
 			children = (
 				99E383D619414E220009524A /* KimballinDatabase.h */,
 				99E383D719414E220009524A /* KimballinDatabase.m */,
+				99EEFCAE1942A44D003C9961 /* PhotosTVC.h */,
+				99EEFCAF1942A44D003C9961 /* PhotosTVC.m */,
 				991DEF3E1941A36E006AA938 /* EventVC.h */,
 				991DEF3F1941A36E006AA938 /* EventVC.m */,
 				991DEF3B19419E12006AA938 /* DefaultEventsCDTVC.h */,
@@ -255,6 +281,7 @@
 				991A316E193EC81500FFA335 /* StaffMembers.plist */,
 				991DEF3019419AB0006AA938 /* Events.plist */,
 				99C61628194225330057FC33 /* TriviaElements.plist */,
+				99EEFCA3194285D4003C9961 /* Photos.plist */,
 				99A8CFF519357188006E60BE /* Main_iPhone.storyboard */,
 				99183E92193DB3F300BFCC4A /* Core Data */,
 				99183E8B193DB38D00BFCC4A /* CDTVC */,
@@ -319,6 +346,13 @@
 		99C6162719420C8F0057FC33 /* Album */ = {
 			isa = PBXGroup;
 			children = (
+				99EEFCA919429965003C9961 /* ikes.jpg */,
+				99EEFCA71942991C003C9961 /* espresso.jpg */,
+				99EEFCA5194298DE003C9961 /* dish.jpg */,
+				99EEFC83194283AB003C9961 /* jam1.jpg */,
+				99EEFC84194283AB003C9961 /* jam2.jpg */,
+				99EEFC85194283AB003C9961 /* jam3.jpg */,
+				99EEFC86194283AB003C9961 /* jam4.jpg */,
 			);
 			name = Album;
 			sourceTree = "<group>";
@@ -409,8 +443,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EEFC87194283AB003C9961 /* jam1.jpg in Resources */,
 				991DEF2D19415C6B006AA938 /* James.jpg in Resources */,
 				991DEF1D19415BB6006AA938 /* Kelsey.jpg in Resources */,
+				99EEFCA81942991C003C9961 /* espresso.jpg in Resources */,
 				991DEF2819415BEF006AA938 /* Nithya.jpg in Resources */,
 				991DEF2319415BB6006AA938 /* Aya.jpg in Resources */,
 				99A8CFFF19357188006E60BE /* Images.xcassets in Resources */,
@@ -418,14 +454,20 @@
 				991DEF1E19415BB6006AA938 /* Carey.jpg in Resources */,
 				99C61629194225330057FC33 /* TriviaElements.plist in Resources */,
 				991DEF2119415BB6006AA938 /* Catherine.jpg in Resources */,
+				99EEFC89194283AB003C9961 /* jam3.jpg in Resources */,
+				99EEFCAA19429965003C9961 /* ikes.jpg in Resources */,
 				991DEF2019415BB6006AA938 /* Qudus.jpg in Resources */,
 				991DEF2B19415BEF006AA938 /* Andres.jpg in Resources */,
+				99EEFCA4194285D4003C9961 /* Photos.plist in Resources */,
 				99A8CFF719357188006E60BE /* Main_iPhone.storyboard in Resources */,
 				991A316F193EC81500FFA335 /* StaffMembers.plist in Resources */,
+				99EEFC88194283AB003C9961 /* jam2.jpg in Resources */,
+				99EEFC8A194283AB003C9961 /* jam4.jpg in Resources */,
 				991DEF2219415BB6006AA938 /* Mai.jpg in Resources */,
 				991DEF3119419AB0006AA938 /* Events.plist in Resources */,
 				991DEF1019415B2D006AA938 /* Joseph.jpg in Resources */,
 				99A8CFEE19357188006E60BE /* InfoPlist.strings in Resources */,
+				99EEFCA6194298DE003C9961 /* dish.jpg in Resources */,
 				991DEF2A19415BEF006AA938 /* DavidG.jpg in Resources */,
 				991DEF1119415B2D006AA938 /* Jorge.jpg in Resources */,
 				991DEF1319415B64006AA938 /* Karina.jpg in Resources */,
@@ -450,16 +492,18 @@
 			files = (
 				99E383D819414E220009524A /* KimballinDatabase.m in Sources */,
 				99E383DB194150710009524A /* DefaultStaffDirectoryCDTVC.m in Sources */,
-				99E383AF1940E33C0009524A /* StaffMember.m in Sources */,
+				99EEFCA219428566003C9961 /* StaffMember.m in Sources */,
 				99C6163219422DF90057FC33 /* TriviaCDTVC.m in Sources */,
-				991DEF451941C8AC006AA938 /* Event.m in Sources */,
+				99EEFC9919428565003C9961 /* Photo.m in Sources */,
 				99A8CFF419357188006E60BE /* KimballinAppDelegate.m in Sources */,
 				99183E8E193DB3C200BFCC4A /* StaffDirectoryCDTVC.m in Sources */,
+				99EEFC9C19428566003C9961 /* Event.m in Sources */,
+				99EEFC9F19428566003C9961 /* TriviaElement.m in Sources */,
 				99C61635194230650057FC33 /* DefaultTriviaCDTVC.m in Sources */,
 				99E383E4194154740009524A /* StaffMemberVC.m in Sources */,
 				99183E91193DB3EB00BFCC4A /* Model.xcdatamodeld in Sources */,
+				99EEFCB01942A44D003C9961 /* PhotosTVC.m in Sources */,
 				991DEF3A19419DE0006AA938 /* EventsCDTVC.m in Sources */,
-				99C6162C194226D20057FC33 /* TriviaElement.m in Sources */,
 				99C6163B194233080057FC33 /* QuestionVC.m in Sources */,
 				991DEF401941A36E006AA938 /* EventVC.m in Sources */,
 				99C61644194237110057FC33 /* AnswerVC.m in Sources */,

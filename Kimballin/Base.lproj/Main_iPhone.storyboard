@@ -139,13 +139,25 @@
                                     <constraint firstAttribute="width" constant="133" id="7BE-To-4fe"/>
                                     <constraint firstAttribute="height" constant="30" id="O3t-u6-Hhw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Add to Calendar">
                                     <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="calendarButtonPressed:" destination="Afe-1m-qwW" eventType="touchUpInside" id="nqv-cw-MNO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihQ-eM-wbQ">
+                                <rect key="frame" x="20" y="396" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rkg-SQ-vlO" kind="push" identifier="Display Photos" id="pKz-7S-0jm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,6 +198,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giN-8r-1ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1194" y="-259"/>
+        </scene>
+        <!--PhotosTVC-->
+        <scene sceneID="EDI-B4-MgK">
+            <objects>
+                <tableViewController id="rkg-SQ-vlO" customClass="PhotosTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Sh2-VO-ii7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Cell" id="NBy-3Z-QWU">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NBy-3Z-QWU" id="wgk-BD-xof">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rkg-SQ-vlO" id="qor-9x-63i"/>
+                            <outlet property="delegate" destination="rkg-SQ-vlO" id="md5-PV-YRQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qtv-PT-I2j"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJk-S1-Dfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="-250"/>
         </scene>
         <!--Default Staff DirectoryCDTVC - Staff Directory-->
         <scene sceneID="bxn-B4-7YI">
@@ -506,6 +547,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWT-eh-T3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="212" y="472"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="mNB-fI-GUS">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="X0Z-oY-WZS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujQ-hN-mEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

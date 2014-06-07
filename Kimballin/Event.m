@@ -7,15 +7,17 @@
 //
 
 #import "Event.h"
+#import "Photo.h"
 
 
 @implementation Event
 
 @dynamic endTime;
+@dynamic latitude;
 @dynamic location;
+@dynamic longitude;
 @dynamic name;
 @dynamic startTime;
-@dynamic latitude;
-@dynamic longitude;
+@dynamic photos;
 
 @end

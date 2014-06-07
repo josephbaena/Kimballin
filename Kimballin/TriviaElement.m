@@ -11,7 +11,7 @@
 
 @implementation TriviaElement
 
-@dynamic question;
 @dynamic answer;
+@dynamic question;
 
 @end

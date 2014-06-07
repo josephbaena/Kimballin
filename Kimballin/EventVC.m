@@ -11,6 +11,7 @@
 #import <EventKit/EKEventStore.h>
 #import <EventKit/EKReminder.h>
 #import <EventKit/EventKit.h>
+#import "PhotosTVC.h"
 
 @interface EventVC () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
@@ -93,4 +94,16 @@ static const int RADIUS = 100;
     }];
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UIButton class]]) {
+        if ([segue.identifier isEqualToString:@"Display Photos"]) {
+            if ([segue.destinationViewController isKindOfClass:[PhotosTVC class]]) {
+                PhotosTVC *tvc = (PhotosTVC *)segue.destinationViewController;
+                [tvc specifyEvent:self.event];
+            }
+        }
+    }
+}
 @end

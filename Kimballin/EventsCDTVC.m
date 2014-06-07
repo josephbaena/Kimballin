@@ -40,14 +40,6 @@
     
     Event *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-//    NSString *startDateString = [NSDateFormatter localizedStringFromDate:event.startTime dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterFullStyle];
-//    NSString *endDateString = [NSDateFormatter localizedStringFromDate:event.startTime dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterFullStyle];
-//    
-//    NSMutableString *detailString = [[NSMutableString alloc] init];
-//    [detailString appendString:startDateString];
-//    [detailString appendString:@" - "];
-//    [detailString appendString:endDateString];
-    
     cell.textLabel.text = event.name;
     cell.detailTextLabel.text = event.location;
     

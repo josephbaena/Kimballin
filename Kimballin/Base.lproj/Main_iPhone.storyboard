@@ -551,13 +551,6 @@
             </objects>
             <point key="canvasLocation" x="212" y="472"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="mNB-fI-GUS">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="X0Z-oY-WZS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ujQ-hN-mEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--ImageVC-->
         <scene sceneID="OTw-KK-8Pq">
             <objects>

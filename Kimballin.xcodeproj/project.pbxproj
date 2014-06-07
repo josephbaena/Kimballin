@@ -68,7 +68,6 @@
 		99EEFCAA19429965003C9961 /* ikes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99EEFCA919429965003C9961 /* ikes.jpg */; };
 		99EEFCB01942A44D003C9961 /* PhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFCAF1942A44D003C9961 /* PhotosTVC.m */; };
 		99EEFCB31942AA24003C9961 /* ImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFCB21942AA24003C9961 /* ImageVC.m */; };
-		99EEFCB61942AD45003C9961 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EEFCB51942AD45003C9961 /* PhotosCDTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,8 +164,6 @@
 		99EEFCAF1942A44D003C9961 /* PhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTVC.m; sourceTree = "<group>"; };
 		99EEFCB11942AA24003C9961 /* ImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageVC.h; sourceTree = "<group>"; };
 		99EEFCB21942AA24003C9961 /* ImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageVC.m; sourceTree = "<group>"; };
-		99EEFCB41942AD45003C9961 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
-		99EEFCB51942AD45003C9961 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,8 +261,6 @@
 				99EEFCB21942AA24003C9961 /* ImageVC.m */,
 				99EEFCAE1942A44D003C9961 /* PhotosTVC.h */,
 				99EEFCAF1942A44D003C9961 /* PhotosTVC.m */,
-				99EEFCB41942AD45003C9961 /* PhotosCDTVC.h */,
-				99EEFCB51942AD45003C9961 /* PhotosCDTVC.m */,
 				991DEF3E1941A36E006AA938 /* EventVC.h */,
 				991DEF3F1941A36E006AA938 /* EventVC.m */,
 				991DEF3B19419E12006AA938 /* DefaultEventsCDTVC.h */,
@@ -507,7 +502,6 @@
 				99C6163219422DF90057FC33 /* TriviaCDTVC.m in Sources */,
 				99EEFC9919428565003C9961 /* Photo.m in Sources */,
 				99A8CFF419357188006E60BE /* KimballinAppDelegate.m in Sources */,
-				99EEFCB61942AD45003C9961 /* PhotosCDTVC.m in Sources */,
 				99183E8E193DB3C200BFCC4A /* StaffDirectoryCDTVC.m in Sources */,
 				99EEFC9C19428566003C9961 /* Event.m in Sources */,
 				99EEFC9F19428566003C9961 /* TriviaElement.m in Sources */,

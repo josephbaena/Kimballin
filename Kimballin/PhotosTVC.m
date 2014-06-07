@@ -19,18 +19,13 @@
 - (void)specifyEvent:(Event *)event
 {
     _event = event;
-}
-
-- (NSMutableArray *)photos
-{
-    if (!_photos) {
-        _photos = [[NSMutableArray alloc] init];
-    }
-    return _photos;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    self.photos = [[NSMutableArray alloc] init];
+
     [super viewWillAppear:animated];
     for (Photo *p in self.event.photos) {
         [self.photos addObject:p];

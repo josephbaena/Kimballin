@@ -172,20 +172,6 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>David Nguyen</string>
-		<key>position</key>
-		<string>ATA</string>
-		<key>room</key>
-		<string>211</string>
-		<key>phone</key>
-		<string>123-456-7890</string>
-		<key>email</key>
-		<string>luna2014@stanford.edu</string>
-		<key>imageName</key>
-		<string>DavidN.jpg</string>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>Jorge Aguirre</string>
 		<key>position</key>
 		<string>RCC</string>
@@ -197,6 +183,20 @@
 		<string>jlaguirre@stanford.edu</string>
 		<key>imageName</key>
 		<string>Jorge.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>David Nguyen</string>
+		<key>position</key>
+		<string>ATA</string>
+		<key>room</key>
+		<string>211</string>
+		<key>phone</key>
+		<string>123-456-7890</string>
+		<key>email</key>
+		<string>luna2014@stanford.edu</string>
+		<key>imageName</key>
+		<string>DavidN.jpg</string>
 	</dict>
 	<dict>
 		<key>name</key>

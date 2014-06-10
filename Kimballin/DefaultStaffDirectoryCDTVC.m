@@ -12,6 +12,7 @@
 #import "StaffMember.h"
 
 @interface DefaultStaffDirectoryCDTVC ()
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @end
 
 @implementation DefaultStaffDirectoryCDTVC
@@ -20,6 +21,10 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    self.spinner.center=self.view.center;
+    [self.spinner startAnimating];
+    [self.view addSubview:self.spinner];
     
     KimballinDatabase *db = [KimballinDatabase sharedDefaultKimballinDatabase];
     if (db.managedObjectContext) {
@@ -33,6 +38,7 @@
             [[NSNotificationCenter defaultCenter] removeObserver:observer];
         }];
     }
+    [self.spinner stopAnimating];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

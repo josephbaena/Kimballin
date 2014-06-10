@@ -14,7 +14,6 @@
 		991DEF1019415B2D006AA938 /* Joseph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF0E19415B2D006AA938 /* Joseph.jpg */; };
 		991DEF1119415B2D006AA938 /* Jorge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF0F19415B2D006AA938 /* Jorge.jpg */; };
 		991DEF1319415B64006AA938 /* Karina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF1219415B64006AA938 /* Karina.jpg */; };
-		991DEF1C19415BB6006AA938 /* DavidN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF1419415BB6006AA938 /* DavidN.jpg */; };
 		991DEF1D19415BB6006AA938 /* Kelsey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF1519415BB6006AA938 /* Kelsey.jpg */; };
 		991DEF1E19415BB6006AA938 /* Carey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF1619415BB6006AA938 /* Carey.jpg */; };
 		991DEF1F19415BB6006AA938 /* Carly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991DEF1719415BB6006AA938 /* Carly.jpg */; };
@@ -51,6 +50,7 @@
 		99C61635194230650057FC33 /* DefaultTriviaCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61634194230650057FC33 /* DefaultTriviaCDTVC.m */; };
 		99C6163B194233080057FC33 /* QuestionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C6163A194233080057FC33 /* QuestionVC.m */; };
 		99C61644194237110057FC33 /* AnswerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C61643194237110057FC33 /* AnswerVC.m */; };
+		99C8A94C1943D53300A13596 /* DavidN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99C8A94B1943D53300A13596 /* DavidN.jpg */; };
 		99E383D819414E220009524A /* KimballinDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383D719414E220009524A /* KimballinDatabase.m */; };
 		99E383DB194150710009524A /* DefaultStaffDirectoryCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383DA194150710009524A /* DefaultStaffDirectoryCDTVC.m */; };
 		99E383E4194154740009524A /* StaffMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E383E3194154740009524A /* StaffMemberVC.m */; };
@@ -90,7 +90,6 @@
 		991DEF0E19415B2D006AA938 /* Joseph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joseph.jpg; sourceTree = "<group>"; };
 		991DEF0F19415B2D006AA938 /* Jorge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jorge.jpg; sourceTree = "<group>"; };
 		991DEF1219415B64006AA938 /* Karina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Karina.jpg; sourceTree = "<group>"; };
-		991DEF1419415BB6006AA938 /* DavidN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DavidN.jpg; sourceTree = "<group>"; };
 		991DEF1519415BB6006AA938 /* Kelsey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kelsey.jpg; sourceTree = "<group>"; };
 		991DEF1619415BB6006AA938 /* Carey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carey.jpg; sourceTree = "<group>"; };
 		991DEF1719415BB6006AA938 /* Carly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carly.jpg; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		99C6163A194233080057FC33 /* QuestionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionVC.m; sourceTree = "<group>"; };
 		99C61642194237110057FC33 /* AnswerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerVC.h; sourceTree = "<group>"; };
 		99C61643194237110057FC33 /* AnswerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerVC.m; sourceTree = "<group>"; };
+		99C8A94B1943D53300A13596 /* DavidN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DavidN.jpg; sourceTree = "<group>"; };
 		99E383D619414E220009524A /* KimballinDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KimballinDatabase.h; sourceTree = "<group>"; };
 		99E383D719414E220009524A /* KimballinDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KimballinDatabase.m; sourceTree = "<group>"; };
 		99E383D9194150710009524A /* DefaultStaffDirectoryCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultStaffDirectoryCDTVC.h; sourceTree = "<group>"; };
@@ -333,9 +333,9 @@
 				991DEF2419415BEF006AA938 /* Nithya.jpg */,
 				991DEF2619415BEF006AA938 /* DavidG.jpg */,
 				991DEF2719415BEF006AA938 /* Andres.jpg */,
-				991DEF1419415BB6006AA938 /* DavidN.jpg */,
 				991DEF1519415BB6006AA938 /* Kelsey.jpg */,
 				991DEF1619415BB6006AA938 /* Carey.jpg */,
+				99C8A94B1943D53300A13596 /* DavidN.jpg */,
 				991DEF1719415BB6006AA938 /* Carly.jpg */,
 				991DEF1819415BB6006AA938 /* Qudus.jpg */,
 				991DEF1919415BB6006AA938 /* Catherine.jpg */,
@@ -451,11 +451,11 @@
 				99EEFC87194283AB003C9961 /* jam1.jpg in Resources */,
 				991DEF2D19415C6B006AA938 /* James.jpg in Resources */,
 				991DEF1D19415BB6006AA938 /* Kelsey.jpg in Resources */,
+				99C8A94C1943D53300A13596 /* DavidN.jpg in Resources */,
 				99EEFCA81942991C003C9961 /* espresso.jpg in Resources */,
 				991DEF2819415BEF006AA938 /* Nithya.jpg in Resources */,
 				991DEF2319415BB6006AA938 /* Aya.jpg in Resources */,
 				99A8CFFF19357188006E60BE /* Images.xcassets in Resources */,
-				991DEF1C19415BB6006AA938 /* DavidN.jpg in Resources */,
 				991DEF1E19415BB6006AA938 /* Carey.jpg in Resources */,
 				99C61629194225330057FC33 /* TriviaElements.plist in Resources */,
 				991DEF2119415BB6006AA938 /* Catherine.jpg in Resources */,

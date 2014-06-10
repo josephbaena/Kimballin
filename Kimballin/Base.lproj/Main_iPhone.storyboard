@@ -239,6 +239,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="xsz-ec-D7S">
+                            <rect key="frame" x="0.0" y="130" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.9215686917" green="0.61960786580000005" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Staff Member" textLabel="A4I-rK-M8j" detailTextLabel="xXt-xx-uLs" style="IBUITableViewCellStyleValue1" id="dmC-bS-o8v">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -274,6 +279,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Staff Directory" id="79q-9g-wZq"/>
+                    <connections>
+                        <outlet property="spinner" destination="xsz-ec-D7S" id="XTv-Am-7cY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s04-EY-kVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
